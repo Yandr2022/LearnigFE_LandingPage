@@ -6,15 +6,19 @@
 
 $color-blue: #5290EA
 $color-orange: #F28B64
+$color-light-grey: #F0F0F0
+$color-sweet-grey: #E2E2E2
 
 .container
     max-width: 1140px 
     margin: 0 auto
 
 .main-section
-    height: 800px
-    background-color: #F0F0F0
+    position: relative
+    min-height: 800px
+    background-color: $color-light-grey
     padding-top: 16px
+    overflow: hidden
     &__nav-container
         display: flex
         flex-direction: row
@@ -24,9 +28,18 @@ $color-orange: #F28B64
     &__logo
         width: 134px
     &__content-container
+        position: relative
         display: flex
         flex-direction: row
-        position: relative
+    &__first-elipse
+        position: absolute
+        top: 129px
+        right: 80px
+    &__second-elipse
+        position: absolute
+        right: -120px
+        top: 650px
+        
  
 .nav-menu
     &__list
@@ -71,7 +84,7 @@ $color-orange: #F28B64
         left: 10px
         width: 608.97px
         height: 220px
-        background: #E2E2E2
+        background: $color-sweet-grey
         border-radius: 100px
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
         transform: rotate(-36.15deg )
@@ -82,6 +95,7 @@ $color-orange: #F28B64
     position: absolute
     top: 150px
     right: 76px
+    z-index: 5
     &__icons-box
         margin-bottom: 1px
         padding-left: 10px
@@ -137,4 +151,87 @@ $color-orange: #F28B64
             margin-right: 12px
     &__text
         font-size: 16px
+
+.elipse
+    width: 194px
+    height: 194px
+    border-radius: 150px
+    background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%)
+    display: flex
+    justify-content: center
+    align-items: center
+    &_big
+        width: 282px
+        height: 282px
+    &__subtract
+        width: 129.33px
+        height: 129.33px
+        border-radius: 150px
+        background: $color-light-grey
+        &_big
+            width: 188px
+            height: 188px
+    
+.second-section
+    min-height: 700px
+    &__container
+        padding-top: 32px
+        position: relative
+    &__title
+        margin-bottom: 40px
+    &__cards-box
+        display: inline-flex
+        margin-bottom: 25px
+    &__cards-item
+        margin-right: 30px
+        &:last-child
+           margin-right: 0px
+    &__icons-box
+        display: flex
+        justify-content: space-evenly
+    &__icons-item
+    &__first-elipse
+        position: absolute
+        top: 80px
+        right: -60px
+        z-index: -1
+    &__second-elipse
+        position: absolute
+        top: 364px
+        left: -60px
+        z-index: -1
         
+
+.cards-item
+    position: relative
+    width: 360px
+    height: 360px
+    background: $color-sweet-grey
+    border-radius: 10px
+    display: flex
+    align-items: flex-end
+    &__img
+        height: 335px
+    &__text
+        width: 280px
+        font-size: 36px
+        text-align: center
+        transform: rotate(90deg)
+        position: absolute
+        top: 144px
+        right: -45px
+    &_orange
+        background: $color-orange
+    &_blue
+        background: $color-blue
+
+.icons-item
+    display: inline-flex
+    align-items: center
+    &__img
+        margin-right: 20px
+        width: 80px
+    &__text
+        font-size: 18px
+        span 
+            font-size: 48px
