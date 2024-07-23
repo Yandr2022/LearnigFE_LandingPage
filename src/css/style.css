@@ -368,6 +368,7 @@ table {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-section {
@@ -510,6 +511,9 @@ table {
   border: none;
   border-top: 1px solid #000;
 }
+.title__hr_top {
+  bottom: 75px;
+}
 
 .buttons {
   display: inline-flex;
@@ -558,6 +562,9 @@ table {
 .elipse__subtract_big {
   width: 188px;
   height: 188px;
+}
+.elipse__subtract_white {
+  background: #FFFFFF;
 }
 
 .second-section {
@@ -638,4 +645,47 @@ table {
 }
 .icons-item__text span {
   font-size: 48px;
+}
+
+.third-section {
+  position: relative;
+  min-height: 640px;
+  background-color: #F0F0F0;
+  z-index: 0;
+  overflow: hidden;
+}
+.third-section__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 167px;
+  padding-top: 46px;
+  justify-content: space-between;
+}
+.third-section__right-wrapper {
+  max-width: 480px;
+}
+.third-section__right-title {
+  margin-bottom: 20px;
+}
+.third-section__text {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.third-section__first-elipse {
+  position: absolute;
+  top: 140px;
+  left: 110px;
+  z-index: -1;
+}
+.third-section__second-elipse {
+  position: absolute;
+  right: -120px;
+  top: -120px;
+}
+.third-section__figure {
+  position: absolute;
+  top: 249px;
+  left: 15px;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
