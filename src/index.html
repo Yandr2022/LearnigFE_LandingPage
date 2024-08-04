@@ -13,10 +13,88 @@
       name="description"
       content="Лучший репетитор игры на гитаре в Минске"
     />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicons" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="icons/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="icons/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="icons/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="icons/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="icons/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="icons/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="icons/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="icons/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="icons/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="icons/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <!-- First section -->
     <section class="main-section">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="container main-section__nav-container">
         <!-- Nav menu First section-->
         <header class="main-section__header">
@@ -30,9 +108,9 @@
         </header>
         <nav class="main-section__nav nav-menu">
           <ul class="nav-menu__list">
-            <li class="nav-menu__list-item">Обо мне</li>
-            <li class="nav-menu__list-item">Занятия</li>
-            <li class="nav-menu__list-item">Запись</li>
+            <li class="nav-menu__list-item"><a href="#about-me">Обо мне</a></li>
+            <li class="nav-menu__list-item"><a href="#lessons">Занятия</a></li>
+            <li class="nav-menu__list-item"><a href="#">Запись</a></li>
           </ul>
         </nav>
       </div>
@@ -76,7 +154,7 @@
           </p>
           <!-- Buttons -->
           <div class="right-wrapper__button buttons">
-            <button class="buttons__main-btn">Забронироать<br />урок</button>
+            <button class="buttons__main-btn">Забронировать<br />урок</button>
             <div class="right-wrapper__icon-btn buttons__icon-btn">
               <img src="./icons/button/Иконка чата 1.svg" alt="chat" />
               <p class="buttons__text">Есть<br />вопросы?</p>
@@ -94,7 +172,7 @@
       </div>
     </section>
     <!-- Second section -->
-    <section class="second-section">
+    <section id="about-me" class="second-section">
       <div class="container second-section__container">
         <!-- Title -->
         <h2 class="second-section__title title">
@@ -167,7 +245,7 @@
       </div>
     </section>
     <!-- Third section -->
-    <section class="third-section">
+    <section id="lessons" class="third-section">
       <div class="container third-section__container">
         <!-- Left block third section -->
         <div class="third-section__left-wrapper">
@@ -198,7 +276,7 @@
           </p>
           <!-- Buttons -->
           <div class="right-wrapper__button buttons">
-            <button class="buttons__main-btn">Забронироать<br />урок</button>
+            <button class="buttons__main-btn">Забронировать<br />урок</button>
             <div class="right-wrapper__icon-btn buttons__icon-btn">
               <img src="./icons/button/Иконка чата 1.svg" alt="chat" />
               <p class="buttons__text">Есть<br />вопросы?</p>
@@ -220,5 +298,34 @@
         <div class="elipse__subtract elipse__subtract_big"></div>
       </div>
     </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <img class="footer__img" src="img/Гриф 1.png" alt="гриф гитары" />
+        <div class="footer__wrapper">
+          <!-- Title -->
+          <h5 class="footer__title title">
+            Запишись на<br />пробный урок
+            <hr class="title__hr title__hr_top" />
+          </h5>
+          <!-- Icons -->
+          <div class="footer__icons-box icons">
+            <div class="icons__item">
+              <i class="fa-brands fa-skype"></i>
+            </div>
+            <div class="icons__item">
+              <i class="fa-brands fa-vk"></i>
+            </div>
+            <div class="icons__item">
+              <i class="fa-brands fa-telegram"></i>
+            </div>
+            <div class="icons__item">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
